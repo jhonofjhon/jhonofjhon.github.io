@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Photos</title>
+<style>
+body, html {
+margin: 0;
+padding: 0;
+height: 100%;
+width: 100%;
+overflow: hidden;
+}
+table {
+height: 100%;
+width: 100%;
+border-collapse: collapse;
+}
+th, td {
+padding: 10px;
+text-align: center;
+border: 10px solid black;
+}
+iframe {
+display: block;
+height: 100%;
+width: 100%;
+border: none;
+}
+        #leftPanel {
+            overflow: hidden;
+        }
+</style>
+</head>
+<body>
+<table>
+<tr style="height: 10%;">
+<th colspan="2">My Photos</th>
+<style>
+
+body {
+background-color: #7FFF00;
+font-family: Copperplate gothic, copperblack;
+}
+th {
+background-color: #DC143C;
+color: white;
+font-size: 24px;
+}
+iframe {
+box-shadow: 0px 0px 10px 3px #ccc;
+}
+</style>
+</tr>
+<tr>
+<td style="width: 20%;"><iframe id="leftPanel" src="photos.html" scrolling="no"></iframe></td>
+<td><iframe name="rPanel"></iframe></td>
+
+</tr>
+</table>
+</body>
+</html>

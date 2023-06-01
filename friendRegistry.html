@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Friend Registry</title>
+  <style>
+    body {
+      font-family: Goudy Old Style, sans-serif;
+      background-color: #f1f1f1;
+    }
+    h1 {
+      color: #444444;
+      text-align: center;
+    }
+    form {
+      background-color: #ffffff;
+      border: 2px solid #cccccc;
+      border-radius: 5px;
+      padding: 20px;
+      margin: auto;
+      width: 50%;
+      max-width: 600px;
+    }
+    label {
+      font-size: 18px;
+      font-weight: bold;
+      color: #444444;
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      font-size: 16px;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      border: none;
+      color: #ffffff;
+      padding: 12px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  <h1>Friend Registry</h1>
+  <p>Please fill out the following form to add a friend to the registry:</p>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="1" max="120" required>
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+    <br><br>
+    <label for="hobby">Hobby:</label>
+    <input type="text" id="hobby" name="hobby">
+    <br><br>
+    <label for="notes">Notes:</label>
+    <textarea id="notes" name="notes" rows="5" cols="30"></textarea>
+    <br><br>
+    <input type="submit" value="Add Friend">
+  </form>
+</body>
+</html>
+
+
+

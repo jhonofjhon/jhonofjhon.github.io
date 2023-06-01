@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CSS Units, Colors, and Background Images</title>
+    <style>
+      
+      #example1 {
+	  background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuoimJRSRvvhl_GGtBjtHvUbP0Bq9nkgqNIkBzoait5umiWkCz');
+        width: 200px;
+        height: 150px;
+        border: 2px solid black;
+        margin: 10px;
+        padding: 10px;
+        font-size: 18px;
+        position: relative;
+        top: -10px;
+        left: -10px;
+      }
+
+      
+      #example2 {
+	  background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHV-GFz_HgphA2KvghH4ugCx07nuIKTORZSTiNcaxIXjOFEFWv');
+        background-color: gray;
+        border: 2px solid #333;
+        color: rgb(255, 128, 0);
+        padding: 10px;
+      }
+
+      x
+      #example3 {
+        background-image: url('https://www.nikeshoebot.com/wp-content/uploads/2022/02/lamelo-ball-puma-logo.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+      }
+
+      #example4 {
+        background-image: url('https://www.nikeshoebot.com/wp-content/uploads/2022/02/lamelo-ball-puma-logo.png'),
+          url('https://www.nikeshoebot.com/wp-content/uploads/2022/02/lamelo-ball-puma-logo.png');
+        background-position: left top, right bottom;
+        background-repeat: no-repeat, repeat;
+        background-size: 50%, 200px;
+        height: 400px;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="example1">This is using absolute and relative units</div>
+    <div id="example2">This is using different color formats</div>
+    <div id="example3">This is using a single background image</div>
+    <div id="example4">This is using multiple background images</div>
+  </body>
+</html>
