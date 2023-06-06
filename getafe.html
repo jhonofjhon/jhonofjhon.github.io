@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto+Slab:wght@100&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Outfit", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.3;
+        color: white;
+      }
+
+      h1 {
+        font-family: "Copperblack", sans-serif;
+        color: #333;
+        text-align: center;
+        font-size: 6rem;
+      }
+
+      h2 {
+        font-family: "Copperplate gothic", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 3rem;
+      }
+
+      p {
+        font-family: "Outfit", sans-serif;
+        color: white;
+        text-align: center;
+      }
+
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-bottom-style: groove;
+        border-color: #333;
+        background: white;
+        z-index: 10;
+      }
+
+      #front_page {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(90, 90, 90, 0.3);
+      }
+
+      .mapa {
+        width: 56.6vw;
+        height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: 37vw;
+      }
+
+      .info_sq {
+        position: fixed;
+        right: 45px;
+        bottom: 250px;
+        width: 30vw;
+        height: 60vh;
+        border-radius: 10px;
+        background-color: rgb(129, 114, 114);
+      }
+
+      area:hover {
+        cursor: pointer;
+      }
+
+      area[title]:hover:after {
+        content: attr(title);
+        padding: 20px;
+        color: #fff;
+        background-color: #333;
+        position: fixed;
+        z-index: 9999;
+        left: 81%;
+        top: 46%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        font-size: 25px;
+      }
+
+      .info_sq {
+        position: fixed;
+        padding-top: 35px;
+        padding-right: 30px;
+        padding-left: 30px;
+        right: 26px;
+        top: 250px;
+        width: 35vw;
+        height: 18vh;
+        border-radius: 10px;
+        background-color: #444;
+      }
+    </style>
+
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </head>
+
+  <body>
+    <section id="Front_page">
+      <div class="info_sq">
+        <br />
+        <h2 style= "background-color: #00FF00">Hover on a municipality to know more!</h2>
+      </div>
+      <div id="bohol-map">
+        <img
+          class="mapa"
+          src="https://doreentheexplorer.files.wordpress.com/2016/06/map_of_getafe.png?w=620"
+          alt="map"
+          usemap="#map"
+        />
+
+        <map name="map">
+          <area
+            shape="circle"
+            coords="780, 230 , 65"
+            alt="Alumar"
+            title="ALUMAR - Population: 1,203 Households: 231 "
+            href="https://www.philatlas.com/visayas/r07/bohol/getafe/alumar.html"
+          />
+          <area
+          shape="circle"
+          coords="665, 120, 65"
+          alt="Banacon"
+          title="BANACON - Population: 1,524 Households: 280 "
+          href="https://www.philatlas.com/visayas/r07/bohol/getafe/banacon.html"
+        />
+        <area
+        shape="circle"
+        coords="600, 710, 50"
+        alt="Buyog"
+        title="BUYOG - Population: 973 Households: 188 "
+        href="https://www.philatlas.com/visayas/r07/bohol/getafe/buyog.html"
+      />
+      <area
+      shape="circle"
+      coords="820, 805, 40"
+      alt="Cabasakan"
+      title="CABASAKAN - Population: 1,287 Households: 248 "
+      href="https://www.philatlas.com/visayas/r07/bohol/getafe/cabasakan.html"
+    />
+    <area
+    shape="circle"
+    coords="385, 645, 35"
+    alt="Campao Occidental"
+    title="CAMPAO OCCIDENTAL - Population: 535 Households: 90 "
+    href="https://www.philatlas.com/visayas/r07/bohol/getafe/campao-occidental.html"
+  />
+  <area
+  shape="circle"
+  coords="440, 740, 40"
+  alt="Campao Oriental"
+  title="CAMPAO ORIENTAL - Population: 1,037  Households: 196 "
+  href="https://www.philatlas.com/visayas/r07/bohol/getafe/campao-oriental.html"
+  />
+  <area
+  shape="circle"
+  coords="830, 580, 40"
+  alt="Cangmundo"
+  title="CANGMUNDO - Population: 934 Households: 191"
+  href="https://www.philatlas.com/visayas/r07/bohol/getafe/cangmundo.html"
+/>
+<area
+shape="circle"
+coords="580, 500, 33"
+alt="Carlos P. Garcia"
+title="CARLOS P. GARCIA - Population: 1,023 Households: 214 "
+href="https://www.philatlas.com/visayas/r07/bohol/getafe/carlos-p-garcia.html"
+/>
+<area
+        shape="circle"
+        coords="443, 574, 32"
+        alt="Corte Baud"
+        title="CORTE BAUD - Population: 1,045 Households: 179"
+        href="https://www.philatlas.com/visayas/r07/bohol/getafe/corte-baud.html"
+      />
+      <area
+        shape="circle"
+        coords="670, 290, 30"
+        alt="Handumon"
+        title="HANDUMON - Population: 1,269 Households: 253"
+        href="https://www.philatlas.com/visayas/r07/bohol/getafe/handumon.html"
+      />
+      <area
+        shape="circle"
+        coords="540, 140, 40"
+        alt="Jagoliao"
+        title="JAGOLIAO - Population: 1,416 Households: 280 "
+        href="https://www.philatlas.com/visayas/r07/bohol/getafe/jagoliao.html"
+      />
+      <area
+        shape="circle"
+        coords="622, 310, 25"
+        alt="Jandayan Norte"
+        title="JANDAYAN NORTE - Population:1,052  Households:204 "
+        href="https://www.philatlas.com/visayas/r07/bohol/getafe/jandayan-norte.html"
+      />
+      <area
+        shape="circle"
+        coords="580, 350, 35"
+        alt="Jandayan Sur"
+        title="JANDAYAN SUR - Population:1,718  Households:323 "
+        href="https://www.philatlas.com/visayas/r07/bohol/getafe/jandayan-sur.html"
+      />
+      <area
+        shape="circle"
+        coords="860, 200, 40"
+        alt="Mahanay"
+        title="MAHANAY - Population:607  Households:101"
+        href="https://www.philatlas.com/visayas/r07/bohol/getafe/mahanay.html"
+      />
+      <area
+        shape="circle"
+        coords="360, 230, 28"
+        alt="Nasingin"
+        title="NASINGIN - Population:2,115  Households:454 "
+        href="https://www.philatlas.com/visayas/r07/bohol/getafe/nasingin.html"
+      />
+      <area
+        shape="circle"
+        coords="60, 260, 30"
+        alt="Pandanon"
+        title="PANDANON - Population:2,362  Households:483 "
+        href="https://www.philatlas.com/visayas/r07/bohol/getafe/pandanon.html"
+      />
+      <area
+        shape="circle"
+        coords="490, 440, 23"
+        alt="Poblacion"
+        title="POBLACION - Population:2,704  Households:541 "
+        href="https://www.philatlas.com/visayas/r07/bohol/getafe/poblacion.html"
+      />
+      <area
+        shape="circle"
+        coords="460, 480, 25"
+        alt="Saguise"
+        title="SAGUISE - Population:1,977 Households:349"
+        href="https://www.philatlas.com/visayas/r07/bohol/getafe/saguise.html"
+      />
+      <area
+        shape="circle"
+        coords="660, 490, 30"
+        alt="Salog"
+        title="SALOG - Population:1,313  Households:232 "
+        href="https://www.philatlas.com/visayas/r07/bohol/getafe/salog.html"
+      />
+      <area
+        shape="circle"
+        coords="740, 480, 25"
+        alt="San Jose"
+        title="SAN JOSE - Population:1,813  Households:370 "
+        href="https://www.philatlas.com/visayas/r07/bohol/getafe/san-jose.html"
+      />
+      <area
+        shape="circle"
+        coords="630, 590, 30"
+        alt="Santo Niño"
+        title="SANTO NINO - Population:754  Households:148 "
+        href="https://www.philatlas.com/visayas/r07/bohol/getafe/santo-nino.html"
+      />
+      <area
+        shape="circle"
+        coords="535, 460, 20"
+        alt="Taytay"
+        title="TAYTAY - Population:1,667  Households:329 "
+        href="https://www.philatlas.com/visayas/r07/bohol/getafe/taytay.html"
+      />
+      <area
+        shape="circle"
+        coords="470, 530, 20"
+        alt="Tugas"
+        title="TUGAS - Population:979  Households:221 "
+        href="https://www.philatlas.com/visayas/r07/bohol/getafe/tugas.html"
+      />
+      <area
+        shape="circle"
+        coords="833, 430, 25"
+        alt="Tulang"
+        title="TULANG - Population:2,115  Households:417 "
+        href="https://www.philatlas.com/visayas/r07/bohol/getafe/tulang.html"
+      />
+       
+     
+        </map>
+      </div>
+    </section>
+  </body>
+</html>
+
+<!--
+    more left - right
+    less left - left
+
+    more right - down
+    less right - up
+       
+-->
