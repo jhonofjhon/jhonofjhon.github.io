@@ -1,0 +1,264 @@
+/* Add your custom CSS styles here */
+
+/* Header */
+header {
+  background-image: url("Love.Live!.School.Idol.Festival.full.2457979.png");
+  background-color: #c110d1;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.user {
+  margin-bottom: 20px;
+}
+
+.user img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.post {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+nav {
+  background-image: url("Mystery.png");
+  background-color: #ee0e0e;
+  padding: 5px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: rgb(107, 24, 240);
+}
+
+/* Home */
+
+.home {
+  background-color: hsl(2, 76%, 53%);
+  background-image: url(portpicnyt.jpg);
+  background-attachment: fixed;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.home h3 {
+  font-size: 1.2rem;
+  color: #f5e50b;
+}
+
+.home h1 {
+  font-size: 3rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.home span {
+  color: #f8e10d;
+  font-weight: bold;
+}
+
+.home p {
+  color: #FFD700;
+  margin-bottom: 40px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+}
+/* About */
+.about {
+  background-image: url("portpicnyt.jpg");
+  background-attachment: fixed;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #f7ad0e;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Portfolio */
+.portfolio {
+  background-color: #FFD700;
+  background-image: url("portpicnyt.jpg");
+  background-attachment: fixed;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: gold;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+.box,
+.project {
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+  margin-bottom: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.box:hover,
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 100px rgb(130, 5, 247);
+}
+
+.content a {
+  text-decoration: none;
+  color: #f1e319;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.project p {
+  font-size: 1rem;
+  margin-bottom: 0;
+  color: #f3ef0c;
+}
+
+/* Contact */
+.contact {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  color: #1d85e6;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.contact ul li {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.social-icons li a {
+  color: #333;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons li a:hover {
+  color: #FFD700;
+}
+
+.neon-button {
+  display: inline-block;
+  background-color: #961add;
+  color: var(--clr-neon);
+  border: currentColor 0.105em solid;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.neon-button:hover {
+  box-shadow: 0 0 0.5em 0  #FFD700, 0 0 40px #FFD700, 0 0 80px #FFD700;
+}
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .box,
+  .project {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
